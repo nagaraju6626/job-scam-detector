@@ -54,16 +54,23 @@ def detect_scam(text):
 
             found_words.append("Unverified company domain")
 
+    # Convert score into percentage
+    percentage = min(score * 5, 100)
+
     # Final result
-    if score >= 10:
+    if score >= 20:
 
         final_result = "Scam Job"
-        percentage = 85
+
+    elif score >= 10:
+
+        final_result = "Suspicious Job Post"
 
     else:
 
         final_result = "Real Job"
-        percentage = 15
+
+        percentage = max(15, percentage)
 
     # Return output
     return {

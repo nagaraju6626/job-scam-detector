@@ -59,7 +59,7 @@ def home():
 
     for row in history:
 
-        if row[2] == "Looks Safe":
+        if row[2] == "Real Job":
 
             safe_count += 1
 
