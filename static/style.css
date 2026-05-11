@@ -1,168 +1,76 @@
-body{
+/* EXTRA MOBILE FIX */
 
-    background:#f2f2f2;
-    font-family:Arial;
-    margin:0;
-    padding:0;
-}
+@media screen and (max-width:480px){
 
-.container{
+    body{
 
-    width:60%;
-    margin:auto;
-    margin-top:50px;
-    background:white;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,0.1);
-}
-
-textarea{
-
-    width:100%;
-    height:200px;
-    padding:10px;
-    font-size:16px;
-    border:1px solid #ccc;
-    border-radius:5px;
-    resize:none;
-    box-sizing:border-box;
-}
-
-button{
-
-    padding:10px 20px;
-    font-size:16px;
-    background:#ff4d4d;
-    color:white;
-    border:none;
-    border-radius:5px;
-    cursor:pointer;
-    margin-top:10px;
-}
-
-button:hover{
-
-    background:#e60000;
-}
-
-.result{
-
-    margin-top:20px;
-    background:#eee;
-    padding:15px;
-    border-radius:10px;
-    overflow-x:auto;
-}
-
-.safe{
-
-    color:green;
-}
-
-.suspicious{
-
-    color:orange;
-}
-
-.high{
-
-    color:red;
-}
-
-table{
-
-    width:100%;
-    border-collapse:collapse;
-    margin-top:20px;
-}
-
-table th,
-table td{
-
-    border:1px solid #ccc;
-    padding:10px;
-    text-align:center;
-}
-
-canvas{
-
-    max-width:100%;
-    height:auto !important;
-}
-
-/* MOBILE DEVICES */
-
-@media screen and (max-width:600px){
+        overflow-x:hidden;
+    }
 
     .container{
 
-        width:95%;
-        margin-top:20px;
-        padding:15px;
+        width:100% !important;
+        margin:0 !important;
+        margin-top:10px !important;
+        padding:12px !important;
+        border-radius:0 !important;
+        box-sizing:border-box;
     }
 
     textarea{
 
-        height:150px;
-        font-size:14px;
+        width:100% !important;
+        height:140px !important;
+        font-size:14px !important;
     }
 
     button{
 
-        width:100%;
-        font-size:15px;
+        width:100% !important;
+        padding:12px !important;
+        font-size:15px !important;
     }
 
-    h1,h2,h3{
+    h1{
 
-        font-size:22px;
+        font-size:22px !important;
+        text-align:center;
+    }
+
+    h2{
+
+        font-size:18px !important;
+        text-align:center;
+    }
+
+    h3{
+
+        font-size:16px !important;
         text-align:center;
     }
 
     table{
 
-        font-size:12px;
+        display:block;
+        overflow-x:auto;
+        white-space:nowrap;
+        width:100%;
     }
 
-    table th,
-    table td{
+    canvas{
 
-        padding:6px;
+        width:100% !important;
+        height:auto !important;
+    }
+
+    .result{
+
+        padding:10px !important;
+        font-size:14px;
     }
 
     .high{
 
-        font-size:30px;
-    }
-}
-
-/* TABLET DEVICES */
-
-@media screen and (min-width:601px) and (max-width:992px){
-
-    .container{
-
-        width:85%;
-    }
-
-    textarea{
-
-        height:180px;
-    }
-
-    button{
-
-        font-size:17px;
-    }
-}
-
-/* LARGE SCREENS */
-
-@media screen and (min-width:993px){
-
-    .container{
-
-        width:70%;
+        font-size:24px !important;
     }
 }
